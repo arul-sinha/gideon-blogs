@@ -1,0 +1,109 @@
+.main_heading {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 2px #000, 0 0 25px rgb(253, 24, 253), 0 0 5px #df49c6;
+  transition: 2.5s;
+  text-align: center;
+  font-size: 40px;
+}
+
+.sub_heading {
+  text-shadow: 2px 2px 5px red;
+  transition: 2.5s;
+  text-align: center;
+}
+
+.sub_heading:hover {
+  text-shadow: none;
+  color: red;
+}
+
+.main_heading:hover {
+  color: rgb(226, 34, 226);
+  text-shadow: none;
+}
+
+.main_post_preview {
+  width: 200px;
+  height: 200px;
+  background-color: magenta;
+  transition: 2s;
+  box-shadow: 2px 2px #808080;
+  align-content: center;
+  margin: 10px;
+  border-radius: 10px;
+}
+#main_post_container {
+  display: flex;
+  transition: 2s;
+  flex-wrap: wrap;
+  border: red 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+#main_post_container > div {
+  margin: 10px;
+  opacity: 0.8;
+  transition: 2s;
+  text-align: justify;
+  overflow: -moz-hidden-unscrollable;
+}
+.main_post_preview:hover {
+  background-color: red;
+  opacity: 1;
+  box-shadow: none;
+}
+
+body {
+  background-image: linear-gradient(pink, pink);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#sidebar {
+  background: none;
+  width: max-content;
+  padding: 1%;
+  border-radius: 9%;
+  border: 2px solid black;
+  display: none;
+  margin-left: 5px;
+}
+
+#sidebarlink {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: 1.4s;
+}
+
+#sidebarlink:hover {
+  color: rgba(90, 81, 81, 0.486);
+}
+
+#arrow {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  animation: none;
+  z-index: 2;
+}
+
+#rearrow {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: none;
+  left: 90px;
+  animation: none;
+  z-index: 2ti;
+}
+
+#topbar_container{
+  background-image: url(../static/images/topbar_bg.webp);
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  position: relative;
+}
+

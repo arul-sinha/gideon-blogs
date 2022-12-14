@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../static/styles_main.css" />
+    <script src="../static/script.js"></script>
+    <link rel="stylesheet" href="../static/animations.css" />
+    <link rel="stylesheet" href="../static/navbar/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../static/images/logo.png"
+      type="image/x-icon"
+    />
+    <script src="../static/navbar/script_nojq.js"></script>
+    <link rel="stylesheet" href="../static/contextmenu/styles.css" />
+    <script src="../static/contextmenu/script.js"></script>
+    <script src="../static/jquery-3.6.1.min.js"></script>
+    <script src="../static/navbar/script.js"></script>
+    <script src="../static/login/script.js"></script>
+    <link rel="stylesheet" href="../static/login/styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <title>login</title>
+  </head>
+  <body onload="start()">
+    <section class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="#!"
+            ><img
+              id="logo_main"
+              onmouseout="logo_rerotate()"
+              onmouseover="logo_rotate()"
+              src="../static/images/logo.png"
+              alt="PEAR"
+          /></a>
+        </div>
+        <nav>
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a href="#!"> <i class="bi bi-house-door-fill"></i>&nbsp;Home</a>
+            </li>
+            <li>
+              <a href="#!"><i class="bi bi-file-earmark-text"></i>&nbsp;About</a>
+            </li>
+            <li>
+              <a href="#!">Services</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="#!">Web Design</a>
+                </li>
+                <li>
+                  <a href="#!">Web Development</a>
+                </li>
+                <li>
+                  <a href="#!">Graphic Design</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">Pricing</a>
+            </li>
+            <li>
+              <a href="#!">Portfolio</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="#!">Web Design</a>
+                </li>
+                <li>
+                  <a href="#!">Web Development</a>
+                </li>
+                <li>
+                  <a href="#!">Graphic Design</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <div id="sidebar_container">
+      <img
+        id="arrow"
+        src="../static/images/arrow.png"
+        onclick="opensidebar()"
+      />
+      <img
+        id="rearrow"
+        src="../static/images/rearrow.png"
+        onclick="closesidebar()"
+      />
+
+      <div id="sidebar">
+        <a href="/register" id="sidebarlink">Register</a><br />
+        <a href="/" id="sidebarlink">Home</a><br />
+        <a href="/about" id="sidebarlink">About</a><br />
+      </div>
+    </div>
+    <div id="contextMenu" class="context-menu" style="display: none">
+      <ul>
+        <li><a href="poems.html">Services</a></li>
+        <li><a href="plays.html">View Profile</a></li>
+        <li><a href="stories.html">Home</a></li>
+        <li><a href="paintings.html">Help</a></li>
+        <li><a href="song_parodies.html">Load More</a></li>
+        <li><a href="All blogs.htm">Logout</a></li>
+      </ul>
+    </div>
+    <h1 class="sub_heading">
+      Login to your existing gideon ID 
+    </h1>
+    <div id="log_form_container">
+      <form action="/log_into_db" method="post" id="log_form_main">
+        <label for="fname" id="log_lable_fname">First Name: </label>
+        <input autofill="off" name="log_fname" class="log_form_name" onfocus="log_before_name()" type="text" autocomplete="off" id="log_lname" autofocus>
+        <label for="fname" id="log_lable_lname">Last Name: </label>
+        <input autofill="off" name="log_lname" onfocus="log_before_name()" class="log_form_name" type="text" autocomplete="off" onforminput="log_post_name()" id="log_lname" autofocus>
+        <br><br><br>
+        <label" for="fname" id="log_lable_email">Email: </label>
+        <input autofill="off"  name="log_email" class="log_form_email" onfocus="log_after_name()" type="text" autocomplete="off" id="log_email">
+        <br><br><br>
+        <label for="fname" id="log_lable_fname">Password: </label>
+        <input autofill="off" name="log_password" onfocus="log_after_email()" class="log_form_pass" type="password" autocomplete="off" id="log_lname" autofocus>
+        <label for="fname" id="log_lable_fname">Comform Password: </label>
+        <input autofill="off" onfocus="log_after_email()" class="log_form_pass" type="password" autocomplete="off" id="log_lname" autofocus>
+        <button type="submit" class="log_btn fifth">Register</button>
+      </form>
+    </div>
+  </body>
+</html>

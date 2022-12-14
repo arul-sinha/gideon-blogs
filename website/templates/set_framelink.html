@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Frames</title>
+    <style>
+      body {
+        background-color: green;
+        color: maroon;
+        font-size: x-large;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      #frames {
+        background: none;
+        height: 43px;
+        outline: double yellow;
+        color: yellow;
+        margin-right: 20px;
+        transition: 1s;
+      }
+      #frames:hover {
+        background-color: yellow;
+        height: 43px;
+        outline: double green;
+        color: green;
+        margin-right: 20px;
+      }
+      #frames:active {
+        background-color: cyan;
+        height: 43px;
+        outline: solid cyan;
+        color: darkblue;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="about.htm" target="rframe"><button id="frames">About</button></a>
+    <a href="contactus.html" target="rframe"
+      ><button id="frames">contact us</button></a
+    >
+    <a href="search.xml" target="rframe"><button id="frames">search</button></a>
+  </body>
+</html>

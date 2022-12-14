@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../static/styles_main.css" />
+    <script src="../static/script.js"></script>
+    <link rel="stylesheet" href="../static/animations.css" />
+    <link rel="stylesheet" href="../static/navbar/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../static/images/logo.png"
+      type="image/x-icon"
+    />
+    <script src="../static/navbar/script_nojq.js"></script>
+    <link rel="stylesheet" href="../static/contextmenu/styles.css" />
+    <script src="../static/contextmenu/script.js"></script>
+    <script src="../static/jquery-3.6.1.min.js"></script>
+    <script src="../static/navbar/script.js"></script>
+    <script src="../static/register/script.js"></script>
+    <link rel="stylesheet" href="../static/register/styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body onload="start()">
+    <section class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="#!"
+            ><img
+              id="logo_main"
+              onmouseout="logo_rerotate()"
+              onmouseover="logo_rotate()"
+              src="../static/images/logo.png"
+              alt="PEAR"
+          /></a>
+        </div>
+        <nav>
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a href="#!">Home</a>
+            </li>
+            <li>
+              <a href="#!">About</a>
+            </li>
+            <li>
+              <a href="#!">Services</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="#!">Web Design</a>
+                </li>
+                <li>
+                  <a href="#!">Web Development</a>
+                </li>
+                <li>
+                  <a href="#!">Graphic Design</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">Pricing</a>
+            </li>
+            <li>
+              <a href="#!">Portfolio</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="#!">Web Design</a>
+                </li>
+                <li>
+                  <a href="#!">Web Development</a>
+                </li>
+                <li>
+                  <a href="#!">Graphic Design</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <div id="sidebar_container">
+      <img
+        id="arrow"
+        src="../static/images/arrow.png"
+        onclick="opensidebar()"
+      />
+      <img
+        id="rearrow"
+        src="../static/images/rearrow.png"
+        onclick="closesidebar()"
+      />
+
+      <div id="sidebar">
+        <a href="#" id="sidebarlink">Login</a><br />
+        <a href="/" id="sidebarlink">Home</a><br />
+        <a href="#" id="sidebarlink">About</a><br />
+      </div>
+    </div>
+    <div id="contextMenu" class="context-menu" style="display: none">
+      <ul>
+        <li><a href="poems.html">Services</a></li>
+        <li><a href="plays.html">View Profile</a></li>
+        <li><a href="stories.html">Home</a></li>
+        <li><a href="paintings.html">Help</a></li>
+        <li><a href="song_parodies.html">Load More</a></li>
+        <li><a href="All blogs.htm">Logout</a></li>
+      </ul>
+    </div>
+    <h1 class="sub_heading">
+      Register yourself for using gideon blogs
+    </h1>
+    <div id="reg_form_container">
+      <form action="/reg_into_db" method="post" id="reg_form_main">
+        <label for="fname" id="reg_lable_fname">First Name: </label>
+        <input autofill="off" name="reg_fname" class="reg_form_name" onfocus="reg_before_name()" type="text" autocomplete="off" id="reg_lname" autofocus>
+        <label for="fname" id="reg_lable_lname">Last Name: </label>
+        <input autofill="off" name="reg_lname" onfocus="reg_before_name()" class="reg_form_name" type="text" autocomplete="off" onforminput="reg_post_name()" id="reg_lname" autofocus>
+        <br><br><br>
+        <label" for="fname" id="reg_lable_email">Email: </label>
+        <input autofill="off"  name="reg_email" class="reg_form_email" onfocus="reg_after_name()" type="text" autocomplete="off" id="reg_email">
+        <br><br><br>
+        <label for="fname" id="reg_lable_fname">Password: </label>
+        <input autofill="off" name="reg_password" onfocus="reg_after_email()" class="reg_form_pass" type="password" autocomplete="off" id="reg_lname" autofocus>
+        <label for="fname" id="reg_lable_fname">Comform Password: </label>
+        <input autofill="off" onfocus="reg_after_email()" class="reg_form_pass" type="password" autocomplete="off" id="reg_lname" autofocus>
+        <button type="submit" class="reg_btn fifth">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
