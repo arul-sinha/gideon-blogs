@@ -1,0 +1,18 @@
+#right_frame {
+  margin: 10px;
+  border: #f00 solid 2px;
+}
+#set_nav_links {
+  margin: 10px;
+  border: #f00 solid 2px;
+}
+#iframe_container {
+  display: flex;
+  transition: 2s;
+  margin: 5px;
+  flex-wrap: wrap;
+  border: #f00 2px solid;
+  border-radius: 10px;
+  font-family: 'Comfortaa', cursive;
+  padding: 10px;
+}

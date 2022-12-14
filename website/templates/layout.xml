@@ -78,20 +78,6 @@
             </li>
             <li>
               <a href="#!"><i class="bi bi-gear"></i>&nbsp;Settings</a>
-              <ul class="nav-dropdown">
-                <li>
-                  <a href="/settings?set=privacy">Privacy</a>
-                </li>
-                <li>
-                  <a href="/settings?set=theme">Theme</a>
-                </li>
-                <li>
-                  <a href="/settings?set=payment">Payments</a>
-                </li>
-                <li>
-                  <a href="/settings?set=notifications">Notifications</a>
-                </li>
-              </ul>
             </li>
             <li>
               <a href="/account"><i class="bi bi-person"></i>&nbsp;You</a>

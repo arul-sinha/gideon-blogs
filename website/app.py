@@ -33,12 +33,14 @@ def about():
 @app.route("/settings")
 def settings():
     seting_route =request.args.get("set", "Place")
-    if seting_route == "theme":
-        return render_template("./setting/settings.html")    
+    if seting_route == "main":
+        return render_template("settings.html")    
     elif seting_route == "privacy":
-        return render_template("./setting/privacy.html") 
+        return render_template("privacy.html") 
     elif seting_route == "profile":
-        return render_template("./setting/account.html")       
+        return render_template("account.html")      
+    elif seting_route == "btn_frame" :
+        return render_template("setframelink.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
