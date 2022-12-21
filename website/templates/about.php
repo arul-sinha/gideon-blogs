@@ -31,7 +31,7 @@
               onmouseout="logo_rerotate()"
               onmouseover="logo_rotate()"
               src="../static/images/logo.png"
-              alt="PEAR"
+              alt="GIDEON"
           /></a>
         </div>
         <nav>

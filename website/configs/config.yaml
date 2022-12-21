@@ -1,1 +1,3 @@
 db: SQL("sqlite:///../data/data.db")
+servername: server-gideonofficial
+server_port: 4545

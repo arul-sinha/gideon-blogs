@@ -34,6 +34,15 @@
     <title>Gideon Blogs</title>
   </head>
   <body onload="start()">
+    <div id="main_function_container">
+      <h3 id="main_logo_cross_function" onclick="logo_click_exit()"><i class="bi bi-x-lg"></i></h3>
+      <div id="main_function_btn_container" onscroll="main_function_btn_container_show()">
+        <button id="main_function_btn"><h2>Posts</h2></button><br><br>
+        <button id="main_function_btn"><h2>Videos</h2></button><br><br>
+        <button id="main_function_btn"><h2>Photos</h2></button><br><br>
+        <button id="main_function_btn"><h2>Live Streams</h2></button><br><br>
+      </div>
+    </div>
     <section class="navigation">
       <div class="nav-container">
         <div class="brand">
@@ -48,7 +57,7 @@
         </div>
         <nav>
           <div class="nav-mobile">
-            <a id="" href="#!"><span></span></a>
+            <a id="nav-toggle" href="#!"><span></span></a>
           </div>
           <ul class="nav-list">
             <li>

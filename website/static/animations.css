@@ -27,4 +27,13 @@
     to {transform: rotate(360deg); left: 90px;}
 }
 
+@keyframes main_function_container_fadein {
+    from {opacity: 0%;}
+    to {opacity: 70%;}
+}
+
+@keyframes main_function_container_fadeout {
+    from {opacity: 70%;}
+    to {opacity: 0%;}
+}
 

@@ -34,21 +34,34 @@
     <title>Gideon Blogs</title>
   </head>
   <body onload="start()">
+    <div id="main_function_container">
+      <h3 id="main_logo_cross_function"><i onclick="logo_click_exit()" class="bi bi-x-lg"></i></h3>
+      <div id="main_function_btn_container1">
+        <button id="main_function_btn" ><h2>Posts</h2></button>
+        <button id="main_function_btn" ><h2>Videos</h2></button>
+        <button id="main_function_btn" ><h2>Streams</h2></button>
+        <button id="main_function_btn" ><h2>Photos</h2></button>
+        <button id="main_function_btn" ><h2>Stories</h2></button>
+        <button id="main_function_btn" ><h2>Shorts</h2></button>
+      </div>
+      
+    </div>
     <section class="navigation">
       <div class="nav-container">
         <div class="brand">
-          <a href="#!"
+          <a
             ><img
               id="logo_main"
               onmouseout="logo_rerotate()"
               onmouseover="logo_rotate()"
               src="../static/images/logo.png"
-              alt="PEAR"
+              alt="GIDEON"
+              onclick="logo_click()"
           /></a>
         </div>
         <nav>
           <div class="nav-mobile">
-            <a id="" href="#!"><span></span></a>
+            <a id="nav-toggle" href="#!"><span></span></a>
           </div>
           <ul class="nav-list">
             <li>
@@ -77,7 +90,9 @@
               </ul>
             </li>
             <li>
-              <a href="/settings?set=main"><i class="bi bi-gear"></i>&nbsp;Settings</a>
+              <a href="/settings?set=main"
+                ><i class="bi bi-gear"></i>&nbsp;Settings</a
+              >
             </li>
             <li>
               <a href="/account"><i class="bi bi-person"></i>&nbsp;You</a>
@@ -106,8 +121,8 @@
     </div>
     <h1 class="main_heading">Gideon Blogs</h1>
     <h2 class="sub_heading">Posts that might intrest you</h2>
+    <br />
     <div id="main_post_container">
-      <div class="main_post_preview">this is some post</div>
       <div class="main_post_preview">this is some post</div>
       <div class="main_post_preview">this is some post</div>
       <div class="main_post_preview">this is some post</div>

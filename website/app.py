@@ -1,11 +1,12 @@
 from flask import Flask, render_template, redirect, request
 import subprocess as sp
 from cs50 import SQL
-#import yaml
+import yaml
 
 app = Flask("__name__")
-#config = yaml.load(open('configs/config.yaml'))
-#db = config["db"] 
+config = yaml.load(open('configs/config.yaml'))
+db = config["db"]
+print(db) 
 
 @app.route("/")
 def index():
@@ -23,7 +24,15 @@ def login():
 def reg_into_db():
     fname = request.form.get("reg_fname")
     print(fname)
-    return redirect("/")
+    return redirect("/msg_reg_success")
+
+@app.route("/contact_dev")
+def contact():
+    return render_template("contact.html")
+
+@app.route("/temp_layout")
+def layout_test():
+    return render_template("/layout.xml")
 
 @app.route("/about")
 def about():
@@ -44,4 +53,3 @@ def settings():
 
 if __name__ == "__main__":
     app.run(debug=True)
-    

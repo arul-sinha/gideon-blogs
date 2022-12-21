@@ -35,20 +35,23 @@ body {
 }
 
 .main_post_preview {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   background-color: magenta;
-  transition: 2s;
-  box-shadow: 2px 2px #808080;
+  box-shadow: 1px 1px 2px magenta, 0 0 25px #720764, 0 0 5px rgb(212, 30, 182);
+  transition: 1.4s;
+  padding: 10px;
+  color: black;
   align-content: center;
   margin: 10px;
   font-family: 'Comfortaa', cursive;
   border-radius: 10px;
 }
+
 #main_post_container {
   display: flex;
   transition: 2s;
-  margin: 5px;
+  margin: 10px;
   flex-wrap: wrap;
   border: red 2px solid;
   border-radius: 10px;
@@ -64,7 +67,8 @@ body {
   overflow: -moz-hidden-unscrollable;
 }
 .main_post_preview:hover {
-  background-color: red;
+  background: none;
+  color: magenta;
   opacity: 1;
   box-shadow: none;
 }
@@ -123,11 +127,82 @@ body {
   background: black;
   color: #e4f0b0;
   border-radius: 5%;
-  box-shadow: 1px 1px 2px #000, 0 0 25px rgb(29, 29, 29), 0 0 5px #303030;
+  box-shadow: 1px 1px 2px #000, 0 0 25px #720764, 0 0 5px rgb(212, 30, 182);
+  padding: 10px;
+}
+
+#main_vid_container:hover {
+  background: black;
+  color: #e4f0b0;
+  border-radius: 5%;
+  box-shadow: none;
   padding: 10px;
 }
 
 #vid_iframe {
   border-color: #e4f0b0;
   border-radius: 5%;
+}
+
+#main_function_container {
+  position: absolute;
+  z-index: 100;
+  display: none;
+  width: 100%;
+  position: absolute;
+  height: 900%;
+  background-color: black;
+  text-align: center;
+}
+
+#main_function_btn {
+  background: none;
+  display: block;
+  border: 3px solid white;
+  color: white;
+  width: 160px;
+  height: 80px;
+  border-radius: 10px;
+  transform: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+#main_function_btn:hover {
+  background: white;
+  color: black;
+}
+
+#main_function_btn:active {
+  background: white;
+  color: black;
+}
+
+#main_logo_cross_function {
+  text-align: left;
+  margin: 10px;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: magenta;
+  border: 2px solid rgba(0, 0, 255, 0);
+  border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: purple; 
 }

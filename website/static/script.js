@@ -17,5 +17,19 @@ function closesidebar() {
 };
 
 function start() {
-    document.getElementById('logo_main').style.animation = '2s fullrotate '
+    document.getElementById('logo_main').style.animation = '2s fullrotate'
 }
+
+function logo_click() {
+    document.getElementById('main_function_container').style.display = 'block'
+    document.getElementById('main_function_container').style.animation = '4s main_function_container_fadein forwards'
+}
+
+function logo_click_exit() {
+    document.getElementById('main_function_container').style.animation = '2s main_function_container_fadeout forwards'
+    setTimeout(() => {  document.getElementById('main_function_container').style.display = 'none';}, 2100);
+}
+
+   
+    
+
