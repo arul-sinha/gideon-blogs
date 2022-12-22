@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../static/animations.css" />
     <link rel="stylesheet" href="../static/navbar/styles.css" />
     <link rel="stylesheet" href="../static/slideshow/style.css" />
-
+    <link rel="stylesheet" href="../static/setting/style.css" />
     <link
       rel="shortcut icon"
       href="../static/images/logo.png"
@@ -34,21 +34,35 @@
     <title>Gideon Blogs</title>
   </head>
   <body onload="start()">
+    <div id="main_function_container">
+      <h3 id="main_logo_cross_function">
+        <i onclick="logo_click_exit()" class="bi bi-x-lg"></i>
+      </h3>
+      <div id="main_function_btn_container1">
+        <button id="main_function_btn"><h2>Posts</h2></button>
+        <button id="main_function_btn"><h2>Videos</h2></button>
+        <button id="main_function_btn"><h2>Streams</h2></button>
+        <button id="main_function_btn"><h2>Photos</h2></button>
+        <button id="main_function_btn"><h2>Stories</h2></button>
+        <button id="main_function_btn"><h2>Shorts</h2></button>
+      </div>
+    </div>
     <section class="navigation">
       <div class="nav-container">
         <div class="brand">
-          <a href="#!"
+          <a
             ><img
               id="logo_main"
               onmouseout="logo_rerotate()"
               onmouseover="logo_rotate()"
               src="../static/images/logo.png"
-              alt="PEAR"
+              alt="GIDEON"
+              onclick="logo_click()"
           /></a>
         </div>
         <nav>
           <div class="nav-mobile">
-            <a id="" href="#!"><span></span></a>
+            <a id="nav-toggle" href="#!"><span></span></a>
           </div>
           <ul class="nav-list">
             <li>
@@ -77,21 +91,9 @@
               </ul>
             </li>
             <li>
-              <a href="#!"><i class="bi bi-gear"></i>&nbsp;Settings</a>
-              <ul class="nav-dropdown">
-                <li>
-                  <a href="/settings?set=privacy">Privacy</a>
-                </li>
-                <li>
-                  <a href="/settings?set=theme">Theme</a>
-                </li>
-                <li>
-                  <a href="/settings?set=payment">Payments</a>
-                </li>
-                <li>
-                  <a href="/settings?set=notifications">Notifications</a>
-                </li>
-              </ul>
+              <a href="/settings?set=main"
+                ><i class="bi bi-gear"></i>&nbsp;Settings</a
+              >
             </li>
             <li>
               <a href="/account"><i class="bi bi-person"></i>&nbsp;You</a>
@@ -118,10 +120,15 @@
         <a href="/about" id="sidebarlink">About</a><br />
       </div>
     </div>
-    <h1 class="main_heading">Settings</h1>
-    <h2 class="sub_heading">Your Account</h2>
-    
-
+    <h1 class="main_heading">Gideon Blogs</h1>
+    <h2 class="sub_heading">Settings</h2>
+    <br /><br />
+    <table id="set_frame_container">
+      <tr>
+        <td id="set_frame_container_btns" ><iframe src="./set_buttons.html"  height="100%"  frameborder="0"></iframe></td>
+        <td id="set_frame_container_settings" ><iframe src="./set_privacy.html"  height="100%" frameborder="0"></iframe></td>
+      </tr>
+    </table>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <div class="scene">
       <div class="cube">

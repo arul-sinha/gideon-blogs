@@ -1,18 +1,40 @@
-#right_frame {
-  margin: 10px;
-  border: #f00 solid 2px;
+#set_frame_container {
+  table-layout: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 99%;
+  height: 40%;
 }
-#set_nav_links {
-  margin: 10px;
-  border: #f00 solid 2px;
+tr,
+td {
+  border: 3px solid #f00 !important;
+  height: 100%;
 }
-#iframe_container {
-  display: flex;
-  transition: 2s;
-  margin: 5px;
-  flex-wrap: wrap;
-  border: #f00 2px solid;
+#set_frame_container_btns {
+  width: 10%;
+}
+#set_frame_container_settings {
+  width: 90%;
+}
+#set_btn {
+  margin: 8px;
+  display: block;
+  background: none;
+  border: 2px #f00 solid;
   border-radius: 10px;
-  font-family: 'Comfortaa', cursive;
-  padding: 10px;
+  color: #000;
+  transition: 1.5s;
+  width: 80%;
+}
+#set_btn:hover {
+  border-radius: 0px;
+  color: #f00;
+  width: 90%;
+}
+#set_btn:hover .box {
+  float: left;
+  margin-right: 20px;
+}
+#set_btn:hover .clear {
+  clear: both;
 }
