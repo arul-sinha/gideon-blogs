@@ -51,30 +51,29 @@
       <div class="nav-container">
         <div class="brand">
           <a
-            ><img
-              id="logo_main"
-              onmouseout="logo_rerotate()"
-              onmouseover="logo_rotate()"
-              src="../static/images/logo.png"
-              alt="GIDEON"
-              onclick="logo_click()"
-          /></a>
+          >
+            <img id="logo_main" onmouseout="logo_rerotate()" onmouseover="logo_rotate()" src="../static/images/logo.png" alt="GIDEON" onclick="logo_click()" />
+          </a>
         </div>
         <nav>
           <div class="nav-mobile">
-            <a id="nav-toggle" href="#!"><span></span></a>
+            <a id="nav-toggle" href="#!">
+              <span></span>
+            </a>
           </div>
           <ul class="nav-list">
             <li>
-              <a href="/"> <i class="bi bi-house-door"></i>&nbsp;Home</a>
+              <a href="/">
+                <i class="bi bi-house-door"></i>&nbsp;Home</a>
             </li>
             <li>
-              <a href="/about"
-                ><i class="bi bi-file-earmark-text"></i>&nbsp;About</a
-              >
+              <a href="/about">
+                <i class="bi bi-file-earmark-text"></i>&nbsp;About</a
+            >
             </li>
             <li>
-              <a href="#!"><i class="bi bi-menu-down"></i>&nbsp;Action</a>
+              <a href="#!">
+                <i class="bi bi-menu-down"></i>&nbsp;Action</a>
               <ul class="nav-dropdown">
                 <li>
                   <a href="#!">New Post</a>
@@ -91,12 +90,13 @@
               </ul>
             </li>
             <li>
-              <a href="/settings?set=main"
-                ><i class="bi bi-gear"></i>&nbsp;Settings</a
-              >
+              <a href="/settings">
+                <i class="bi bi-gear"></i>&nbsp;Settings</a
+            >
             </li>
             <li>
-              <a href="/account"><i class="bi bi-person"></i>&nbsp;You</a>
+              <a href="/account">
+                <i class="bi bi-person"></i>&nbsp;You</a>
             </li>
           </ul>
         </nav>
@@ -125,8 +125,23 @@
     <br /><br />
     <table id="set_frame_container">
       <tr>
-        <td id="set_frame_container_btns" ><iframe src="./set_buttons.html"  height="100%"  frameborder="0"></iframe></td>
-        <td id="set_frame_container_settings" ><iframe src="./set_privacy.html"  height="100%" frameborder="0"></iframe></td>
+        <td id="set_frame_container_btns">
+          <div id="set_btn_container">
+            <button id="set_btn"><a id="set_btn_link" href="./set_privacy.html" target="set_frame_settings">Privacy</a></button>
+            <button id="set_btn"><a id="set_btn_link" href="./set_notifications.html" target="set_frame_settings">Notifications</a></button>
+            <button id="set_btn"><a id="set_btn_link" href="./set_theme.html" target="set_frame_settings">Theme</a></button>
+            <button id="set_btn"><a id="set_btn_link" href="./set_misc.html" target="set_frame_settings">Misc</a></button>
+            <button id="set_btn"><a id="set_btn_link" href="./set_content.html" target="set_frame_settings">Content</a></button>
+          </div>
+        </td>
+        <td id="set_frame_container_settings">
+          <iframe
+            name="set_frame_settings"
+            src="./set_privacy.html"
+            height="100%"
+            frameborder="0"
+          ></iframe>
+        </td>
       </tr>
     </table>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />

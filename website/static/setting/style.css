@@ -31,10 +31,7 @@ td {
   color: #f00;
   width: 90%;
 }
-#set_btn:hover .box {
-  float: left;
-  margin-right: 20px;
-}
-#set_btn:hover .clear {
-  clear: both;
+#set_btn_link {
+  color: #f00;
+  text-decoration: none;
 }

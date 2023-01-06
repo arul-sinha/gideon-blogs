@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/styles_main.css" />
     <script src="../static/script.js"></script>
     <link rel="stylesheet" href="../static/animations.css" />
@@ -44,36 +45,34 @@
         <button id="main_function_btn" ><h2>Stories</h2></button>
         <button id="main_function_btn" ><h2>Shorts</h2></button>
       </div>
-      
     </div>
     <section class="navigation">
       <div class="nav-container">
         <div class="brand">
           <a
-            ><img
-              id="logo_main"
-              onmouseout="logo_rerotate()"
-              onmouseover="logo_rotate()"
-              src="../static/images/logo.png"
-              alt="GIDEON"
-              onclick="logo_click()"
-          /></a>
+          >
+            <img id="logo_main" onmouseout="logo_rerotate()" onmouseover="logo_rotate()" src="../static/images/logo.png" alt="GIDEON" onclick="logo_click()" />
+          </a>
         </div>
         <nav>
           <div class="nav-mobile">
-            <a id="nav-toggle" href="#!"><span></span></a>
+            <a id="nav-toggle" href="#!">
+              <span></span>
+            </a>
           </div>
           <ul class="nav-list">
             <li>
-              <a href="/"> <i class="bi bi-house-door"></i>&nbsp;Home</a>
+              <a href="/">
+                <i class="bi bi-house-door"></i>&nbsp;Home</a>
             </li>
             <li>
-              <a href="/about"
-                ><i class="bi bi-file-earmark-text"></i>&nbsp;About</a
-              >
+              <a href="/about">
+                <i class="bi bi-file-earmark-text"></i>&nbsp;About</a
+            >
             </li>
             <li>
-              <a href="#!"><i class="bi bi-menu-down"></i>&nbsp;Action</a>
+              <a href="#!">
+                <i class="bi bi-menu-down"></i>&nbsp;Action</a>
               <ul class="nav-dropdown">
                 <li>
                   <a href="#!">New Post</a>
@@ -90,12 +89,13 @@
               </ul>
             </li>
             <li>
-              <a href="/settings?set=main"
-                ><i class="bi bi-gear"></i>&nbsp;Settings</a
-              >
+              <a href="/settings">
+                <i class="bi bi-gear"></i>&nbsp;Settings</a
+            >
             </li>
             <li>
-              <a href="/account"><i class="bi bi-person"></i>&nbsp;You</a>
+              <a href="/account">
+                <i class="bi bi-person"></i>&nbsp;You</a>
             </li>
           </ul>
         </nav>

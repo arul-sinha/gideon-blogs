@@ -1,12 +1,12 @@
 from flask import Flask, render_template, redirect, request
 import subprocess as sp
 from cs50 import SQL
-import yaml
+#import yaml
 
 app = Flask("__name__")
-config = yaml.load(open('configs/config.yaml'))
-db = config["db"]
-print(db) 
+#config = yaml.load(open('configs/config.yaml'))
+#db = config["db"]
+#print(db) 
 
 @app.route("/")
 def index():
@@ -41,15 +41,7 @@ def about():
 
 @app.route("/settings")
 def settings():
-    seting_route =request.args.get("set", "Place")
-    if seting_route == "main":
-        return render_template("settings.html")    
-    elif seting_route == "privacy":
-        return render_template("privacy.html") 
-    elif seting_route == "profile":
-        return render_template("account.html")      
-    elif seting_route == "btn_frame" :
-        return render_template("setframelink.html")
+    return render_template("setting.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="../static/styles_main.css" />
     <script src="../static/script.js"></script>
     <link rel="stylesheet" href="../static/animations.css" />
@@ -22,68 +35,73 @@
   </head>
     <body>
     <body onload="start()">
-    <section class="navigation">
-      <div class="nav-container">
-        <div class="brand">
-          <a href="#!"
-            ><img
-              id="logo_main"
-              onmouseout="logo_rerotate()"
-              onmouseover="logo_rotate()"
-              src="../static/images/logo.png"
-              alt="GIDEON"
-          /></a>
-        </div>
-        <nav>
-          <div class="nav-mobile">
-            <a id="nav-toggle" href="#!"><span></span></a>
-          </div>
-          <ul class="nav-list">
-            <li>
-              <a href="#!">Home</a>
-            </li>
-            <li>
-              <a href="#!">About</a>
-            </li>
-            <li>
-              <a href="#!">Services</a>
-              <ul class="nav-dropdown">
-                <li>
-                  <a href="#!">Web Design</a>
-                </li>
-                <li>
-                  <a href="#!">Web Development</a>
-                </li>
-                <li>
-                  <a href="#!">Graphic Design</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#!">Pricing</a>
-            </li>
-            <li>
-              <a href="#!">Portfolio</a>
-              <ul class="nav-dropdown">
-                <li>
-                  <a href="#!">Web Design</a>
-                </li>
-                <li>
-                  <a href="#!">Web Development</a>
-                </li>
-                <li>
-                  <a href="#!">Graphic Design</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#!">Contact</a>
-            </li>
-          </ul>
-        </nav>
+    <div id="main_function_container">
+      <h3 id="main_logo_cross_function"><i onclick="logo_click_exit()" class="bi bi-x-lg"></i></h3>
+      <div id="main_function_btn_container1">
+        <button id="main_function_btn" ><h2>Posts</h2></button>
+        <button id="main_function_btn" ><h2>Videos</h2></button>
+        <button id="main_function_btn" ><h2>Streams</h2></button>
+        <button id="main_function_btn" ><h2>Photos</h2></button>
+        <button id="main_function_btn" ><h2>Stories</h2></button>
+        <button id="main_function_btn" ><h2>Shorts</h2></button>
       </div>
-    </section>
-    <div id="sidebar_container">
+    </div>
+    <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a
+            >
+              <img id="logo_main" onmouseout="logo_rerotate()" onmouseover="logo_rotate()" src="../static/images/logo.png" alt="GIDEON" onclick="logo_click()" />
+            </a>
+          </div>
+          <nav>
+            <div class="nav-mobile">
+              <a id="nav-toggle" href="#!">
+                <span></span>
+              </a>
+            </div>
+            <ul class="nav-list">
+              <li>
+                <a href="/">
+                  <i class="bi bi-house-door"></i>&nbsp;Home</a>
+              </li>
+              <li>
+                <a href="/about">
+                  <i class="bi bi-file-earmark-text"></i>&nbsp;About</a
+              >
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-menu-down"></i>&nbsp;Action</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="#!">New Post</a>
+                  </li>
+                  <li>
+                    <a href="#!">New Stream</a>
+                  </li>
+                  <li>
+                    <a href="#!">New Image</a>
+                  </li>
+                  <li>
+                    <a href="#!">New Video</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="/settings">
+                  <i class="bi bi-gear"></i>&nbsp;Settings</a
+              >
+              </li>
+              <li>
+                <a href="/account">
+                  <i class="bi bi-person"></i>&nbsp;You</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <div id="sidebar_container">
       <img
         id="arrow"
         src="../static/images/arrow.png"
