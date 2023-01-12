@@ -41,6 +41,17 @@ def about():
 
 @app.route("/settings")
 def settings():
+    seting_route = request.args.get("set", "Place")
+    if seting_route == "notifications":
+        return render_template("set_notifications.html")    
+    elif seting_route == "privacy":
+        return render_template("set_privacy.html") 
+    elif seting_route == "theme":
+        return render_template("set_theme.html")      
+    elif seting_route == "misc" :
+        return render_template("set_misc.html")
+    elif seting_route == "content" :
+        return render_template("set_content.html")
     return render_template("setting.html")
 
 if __name__ == "__main__":

@@ -127,18 +127,19 @@
       <tr>
         <td id="set_frame_container_btns">
           <div id="set_btn_container">
-            <button id="set_btn"><a id="set_btn_link" href="./set_privacy.html" target="set_frame_settings">Privacy</a></button>
-            <button id="set_btn"><a id="set_btn_link" href="./set_notifications.html" target="set_frame_settings">Notifications</a></button>
-            <button id="set_btn"><a id="set_btn_link" href="./set_theme.html" target="set_frame_settings">Theme</a></button>
-            <button id="set_btn"><a id="set_btn_link" href="./set_misc.html" target="set_frame_settings">Misc</a></button>
-            <button id="set_btn"><a id="set_btn_link" href="./set_content.html" target="set_frame_settings">Content</a></button>
+            <button id="set_btn"><a id="set_btn_link" href="/settings?set=privacy" target="set_frame_settings">Privacy</a></button>
+            <button id="set_btn"><a id="set_btn_link" href="/settings?set=notifications" target="set_frame_settings">Notifications</a></button>
+            <button id="set_btn"><a id="set_btn_link" href="/settings?set=theme" target="set_frame_settings">Theme</a></button>
+            <button id="set_btn"><a id="set_btn_link" href="/settings?set=misc" target="set_frame_settings">Misc</a></button>
+            <button id="set_btn"><a id="set_btn_link" href="/settings?set=content" target="set_frame_settings">Content</a></button>
           </div>
         </td>
         <td id="set_frame_container_settings">
           <iframe
             name="set_frame_settings"
-            src="./set_privacy.html"
+            src="/settings?set=privacy"
             height="100%"
+            width="100%"
             frameborder="0"
           ></iframe>
         </td>
