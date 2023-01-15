@@ -206,3 +206,48 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: purple; 
 }
+
+#msg_main_container {
+  height: auto;
+  width: 97%;
+  border: 2px darkgreen solid;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#msg_contact_btn_container {
+  height: 100%;
+  width: 30%;
+}
+
+#msg_main_container2 {
+  height: 100%;
+  width: 100%;
+}
+
+#msg_messages_container {
+  height: 100%;
+  border: 2px solid green;
+  background-color: white;
+}
+
+#msg_contact_btn {
+  background: none;
+  border: 2px solid green;
+  width: 100%;
+  height: 50px;
+  color: #06472e;
+  border-radius: 10px;
+}
+
+#msg_contact_btn_img {
+  height: 30px;
+  width: 30px;
+  margin-right:  20%;
+}
+
+#msg_contact_btn > i {
+  margin-left: 10%;
+}
