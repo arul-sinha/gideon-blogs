@@ -1,0 +1,13 @@
+#temp {
+    width: 150px;
+    height: 150px;
+}
+
+.temp {
+    animation: infinite 10s temp;
+}
+
+@keyframes temp {
+    0%{filter: hue-rotate(1deg);}
+    100%{filter: hue-rotate(360deg);}
+}
