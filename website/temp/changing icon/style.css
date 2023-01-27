@@ -1,13 +1,13 @@
-#temp {
+.container {
+    animation: infinite 10s animation;
+}
+
+#image {
     width: 150px;
     height: 150px;
 }
 
-.temp {
-    animation: infinite 10s temp;
-}
-
-@keyframes temp {
-    0%{filter: hue-rotate(1deg);}
-    100%{filter: hue-rotate(360deg);}
+@keyframes animation {
+    from {filter: hue-rotate(0deg);}
+    to {filter: hue-rotate(360deg)}
 }
