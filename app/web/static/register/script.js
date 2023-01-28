@@ -4,6 +4,7 @@ function start() {
     document.getElementsByClassName('reg_form_pass')[1].style.filter='blur(4px)'
     document.getElementsByClassName('reg_form_pass')[0].style.filter='blur(4px)'
     document.querySelector('.reg_btn').style.filter='blur(8px)'
+    document.getElementById('logo_main').style.animation = '2s fullrotate '
 }
 
 function reg_before_name() {

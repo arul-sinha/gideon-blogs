@@ -1,4 +1,4 @@
 import eel 
-eel.init('web')
-eel.start('index.html')
+eel.init('web/templates')
+eel.start('index.html', mode='default')
 #done

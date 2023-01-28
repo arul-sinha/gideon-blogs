@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../static/styles_main.css" />
+    <script src="../static/script.js"></script>
+    <link rel="stylesheet" href="../static/animations.css" />
+    <link rel="stylesheet" href="../static/navbar/styles.css" />
+    <link rel="stylesheet" href="../static/slideshow/style.css" />
+
+    <link
+      rel="shortcut icon"
+      href="../static/images/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../static/contextmenu/styles.css" />
+    <script src="../static/contextmenu/script.js"></script>
+    <script src="../static/navbar/script_nojq.js"></script>
+    <script src="../static/jquery-3.6.1.min.js"></script>
+    <script src="../static/navbar/script.js"></script>
+    <link rel="stylesheet" href="../static/background/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>Gideon Blogs</title>
+  </head>
+  <body onload="start()">
+    <section class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="#!"
+            ><img
+              id="logo_main"
+              onmouseout="logo_rerotate()"
+              onmouseover="logo_rotate()"
+              src="../static/images/logo.png"
+              alt="PEAR"
+          /></a>
+        </div>
+        <nav>
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a href="/"> <i class="bi bi-house-door"></i>&nbsp;Home</a>
+            </li>
+            <li>
+              <a href="/about"
+                ><i class="bi bi-file-earmark-text"></i>&nbsp;About</a
+              >
+            </li>
+            <li>
+              <a href="#!"><i class="bi bi-menu-down"></i>&nbsp;Action</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="#!">New Post</a>
+                </li>
+                <li>
+                  <a href="#!">New Stream</a>
+                </li>
+                <li>
+                  <a href="#!">New Image</a>
+                </li>
+                <li>
+                  <a href="#!">New Video</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!"><i class="bi bi-gear"></i>&nbsp;Settings</a>
+            </li>
+            <li>
+              <a href="/account"><i class="bi bi-person"></i>&nbsp;You</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <div id="sidebar_container">
+      <img
+        id="arrow"
+        src="../static/images/arrow.png"
+        onclick="opensidebar()"
+      />
+      <img
+        id="rearrow"
+        src="../static/images/rearrow.png"
+        onclick="closesidebar()"
+      />
+
+      <div id="sidebar">
+        <a href="/login" id="sidebarlink">Login</a><br />
+        <a href="/register" id="sidebarlink">Register</a><br />
+        <a href="/about" id="sidebarlink">About</a><br />
+      </div>
+    </div>
+    <h1 class="main_heading">Gideon Blogs</h1>
+    <h2 class="sub_heading">Posts that might intrest you</h2>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    TEST
+    <div class="scene">
+      <div class="cube">
+        <div class="face top"><img src="../static/images/logo.png" /></div>
+        <div class="face bottom"><img src="../static/images/logo.png" /></div>
+        <div class="face left"><img src="../static/images/logo.png" /></div>
+        <div class="face right"><img src="../static/images/logo.png" /></div>
+        <div class="face front"><img src="../static/images/logo.png" /></div>
+        <div class="face back"><img src="../static/images/logo.png" /></div>
+      </div>
+    </div>
+    <div id="contextMenu" class="context-menu" style="display: none">
+      <ul>
+        <li><a href="poems.html">Services</a></li>
+        <li><a href="plays.html">View Profile</a></li>
+        <li><a href="stories.html">Home</a></li>
+        <li><a href="paintings.html">Help</a></li>
+        <li><a href="song_parodies.html">Load More</a></li>
+        <li><a href="All blogs.htm">Logout</a></li>
+      </ul>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

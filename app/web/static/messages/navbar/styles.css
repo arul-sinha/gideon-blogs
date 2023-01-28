@@ -49,14 +49,14 @@ nav ul li a:visited {
   line-height: 70px;
   transition: 1.5s;
   background: none;
-  color: maroon;
+  color: rgb(1, 77, 1);
   text-decoration: none;
-  border: 2px solid pink;
+  border: 2px solid #C9DD94;
 }
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  border: 2px solid red;
-  color: red
+  border: 2px solid green;
+  color: green
 }
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
@@ -76,7 +76,7 @@ nav ul li ul li a {
   display: none;
   z-index: 1;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-  background: pink;
+  background: #C9DD94;
 }
 /* Mobile navigation */
 .nav-mobile {

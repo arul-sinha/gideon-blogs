@@ -22,3 +22,22 @@
     from {transform: rotate(180deg);}
     to {transform: rotate(360deg);}
 }
+
+@keyframes fullrotate {
+    to {transform: rotate(360deg); left: 90px;}
+}
+
+@keyframes main_function_container_fadein {
+    from {opacity: 0%;}
+    to {opacity: 70%;}
+}
+
+@keyframes main_function_container_fadeout {
+    from {opacity: 70%;}
+    to {opacity: 0%;}
+}
+
+@keyframes logorotate_hue {
+    from {filter: hue-rotate(0deg);}
+    to {filter: hue-rotate(360deg);}
+}
