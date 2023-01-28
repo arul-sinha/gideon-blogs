@@ -17,7 +17,8 @@ function closesidebar() {
 };
 
 function start() {
-    document.getElementById('logo_main').style.animation = '2s fullrotate'
+    document.getElementById('logo_main').style.animation = '2s fullrotate';
+    setTimeout(() => {  document.getElementById('logo_main').style.animation = 'logorotate_hue 10s infinite';}, 2000);
 }
 
 function logo_click() {
